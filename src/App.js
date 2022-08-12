@@ -10,14 +10,15 @@ import './App.css';
 
 const App = () => {
   
-  const [businesses, setBusinesses] = useState({})
+  const [businesses, setBusinesses] = useState({businesses: []})
 
   const searchYelp = (term, location, sortBy) => {
     Yelp.searchYelp(term, location, sortBy).then((businesses) => {
       setBusinesses({ businesses: businesses });
     })
   }
-  
+
+  console.log(businesses)
   return (
     <div className="App">
       <h1>ravenous</h1>

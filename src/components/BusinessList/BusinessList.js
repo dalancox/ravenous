@@ -4,11 +4,12 @@ import Business from '../Business/Business';
 
 
 const BusinessList = ({ businesses }) => {
-
+    console.log(businesses.businesses)
     return (
         <div className="BusinessList">
+            
             {
-                businesses.map((business) => {
+                businesses.businesses.map((business) => {
                     return <Business key={business.id} business={business} />
                 })
             }
