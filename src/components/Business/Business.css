@@ -6,8 +6,9 @@
     margin: 0 .5rem 2.3rem .5rem;
   }
   
-  .Business .image-container {
-    height: 16.66rem;
+  .Business .image-container img {
+    width: 100px;
+    height: 200px;
     margin-bottom: 1rem;
   }
   
@@ -36,7 +37,6 @@
   
   .Business-reviews {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     text-align: right;
   }
