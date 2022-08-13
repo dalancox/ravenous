@@ -6,8 +6,7 @@
     margin: 0 .5rem 2.3rem .5rem;
   }
   
-  .Business .image-container img {
-    width: 100px;
+  .Business .image-container {
     height: 200px;
     margin-bottom: 1rem;
   }

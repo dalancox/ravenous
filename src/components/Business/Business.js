@@ -7,6 +7,9 @@ import './Business.css';
 const Business = ({ business }) => {
       return (
         <div className="Business">
+        <div className='image-container'>
+          <img src={business.imageSrc} alt=''></img>
+        </div>
         <h2>{business.name}</h2>
         <div classname="Business-information">
           <div className="Business-address">
