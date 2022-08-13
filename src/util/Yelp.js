@@ -1,4 +1,5 @@
 const apikey = process.env.API_KEY
+console.log(apikey)
 
 const Yelp = {
     searchYelp(term, location, sortBy) {
