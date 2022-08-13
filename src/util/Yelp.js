@@ -4,7 +4,8 @@ const Yelp = {
     searchYelp(term, location, sortBy) {
         return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             headers: {
-                Authorization: `Bearer ${apikey}`
+                Authorization: `Bearer ${apikey}`,
+                mode: `no-cors`
             },
         }).then((response) => {
             return response.json();
