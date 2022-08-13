@@ -1,10 +1,10 @@
-const apikey = 'O54GZMe08RdJyvSxH9MGOrw0eGxCl5Va84Z-pWQvqih_3CbfEa8Jv-MIXm4zX1XyfryhGX7Xnae3_-CnQXcgBXBpPorXIcZlLNE50Xyec1e6vIYC-qwG5IF_oxMKYHYx';
+const apiKey = process.env.API_KEY
 
 const Yelp = {
     searchYelp(term, location, sortBy) {
         return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             headers: {
-                Authorization: `Bearer ${apikey}`
+                Authorization: `Bearer ${apiKey}`
             },
         }).then((response) => {
             return response.json();
