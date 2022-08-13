@@ -16,10 +16,12 @@ const SearchBar = ({ searchYelp }) => {
 
     function handleSearch(e) {
         if(term === `` && location === ``){
-            return console.log('error')
+            console.log('error')
+            e.preventDefault()
+        } else {
+            searchYelp(term, location, sortBy)
+            e.preventDefault()
         }
-        searchYelp(term, location, sortBy)
-        e.preventDefault()
     }
 
     function handleTermChange(e) {
